@@ -22,69 +22,73 @@
   {\usebeamerfont{swiss kicker}\color{SwissMuted}\strut\insertsectionhead\par}%
   {\usebeamerfont{frametitle}\color{SwissInk}\insertframetitle\par}%
   {\color{SwissInk}\rule{\linewidth}{0.65pt}}\par}
+% Une vue par avance du présentateur, en conservant le numéro de l’activité.
+\newcommand{\grandvisuel}[2]{%
+  \centering\includegraphics[width=\linewidth,height=50mm,keepaspectratio]{figures/#1}\par
+  \vspace{1mm}{\raggedright\fontsize{11}{13}\selectfont #2\par}}
 \begin{document}
 \begin{frame}[plain]\titlepage\end{frame}
 \begin{frame}{Notre parcours, de l'idée au ciel}
-\SwissAstroDataColumns{\SwissAstroImageOnly[42mm]{figures/image2.png}\par{\scriptsize Le parcours en deux heures.}}{\small Choisir une tâche et anticiper les erreurs de l'IA.\par\medskip Écrire une consigne, tester le logiciel et partager sa première version.\par\medskip Découvrir quatre projets réalisés avec un Seestar S50.}
+\grandvisuel{image2.png}{Repérez les quatre études de cas à la fin de l’atelier.}
 \end{frame}
 \ouverture{Les problèmes que l’IA peut aider à résoudre}{Partir d’un besoin d’observation, relier des outils et comprendre un message d’erreur.}
 \begin{frame}{Décrire le résultat que l'on cherche}
-\SwissAstroGridPair{6}{6}{\SwissAstroQuote{Prépare une liste des cibles visibles depuis mon balcon.}{Exemple de consigne}\par\smallskip\small Indiquez à l'IA ce que vous voulez obtenir. Essayez sa première proposition sur une cible connue.}{\SwissAstroImageOnly[45mm]{figures/image3.png}}
+\grandvisuel{image3.png}{« Prépare une liste des cibles visibles depuis mon balcon. » Vérifiez la réponse sur une cible connue.}
 \end{frame}
 \begin{frame}{Relier des outils déjà éprouvés}
-\SwissAstroDataColumns{\SwissAstroImageOnly[42mm]{figures/image4.png}\par{\scriptsize Architecture de GNU Astrolist.}}{\small Un fichier FITS contient une image et les renseignements de la prise de vue.\par\medskip Astropy lit le fichier. SIMBAD renseigne l'objet. Matplotlib trace la carte.}
+\grandvisuel{image4.png}{Astropy lit le fichier FITS. SIMBAD renseigne l’objet. Matplotlib trace la carte.}
 \end{frame}
 \begin{frame}{Transformer une erreur en indice}
-\SwissAstroDataColumns{\SwissAstroImageOnly[42mm]{figures/image5.png}\par{\scriptsize Exemples du projet GNU Affiche Messier.}}{\small Copiez le message exact. Précisez la commande et le résultat attendu.\par\medskip Rejouez le même essai après la correction.}
+\grandvisuel{image5.png}{Copiez le message exact. Rejouez la même commande après la correction.}
 \end{frame}
 \begin{frame}{Automatiser une tâche répétitive}
-\SwissAstroGridPair{5}{7}{\SwissAstroMetric{24 h 30}{Estimation}{147 images à 10 minutes par fiche}\par\medskip 24 h 30 de travail manuel estimé. Chronométrez ensuite votre propre série.}{\SwissAstroImageOnly[43mm]{figures/image6.png}}
+\grandvisuel{image6.png}{Estimation manuelle : 147 fiches à dix minutes chacune, soit 24 h 30.}
 \end{frame}
 \ouverture{Les avantages du vibe coding}{Créer plus vite, élargir ses ambitions, gagner en autonomie, prendre plaisir à créer et essayer plusieurs solutions.}
 \begin{frame}{Cinq raisons d'essayer le vibe coding}
-\SwissAstroMediaText[left]{figures/image7.png}{}{}{\small FAAFO résume cinq possibilités selon Kim et Yegge.\par\medskip Rapidité, ambition, autonomie, plaisir et liberté d'essayer plusieurs solutions.}
+\grandvisuel{image7.png}{FAAFO : rapidité, ambition, autonomie, plaisir et liberté d’essayer plusieurs solutions.}
 \end{frame}
 \begin{frame}{Passer d'un catalogue à plusieurs}
-\SwissAstroScientificFigure{figures/image8.png}{Catalogues consultés par GNU Astrolist.}{Illustrations du plan de conférence.}{\small Commencez avec une liste Messier.\par\medskip Ajoutez le catalogue Caldwell. Vérifiez un objet qui figure déjà dans votre liste.}
+\grandvisuel{image8.png}{Croisez les catalogues Messier et Caldwell. Vérifiez les objets qui portent deux noms.}
 \end{frame}
 \begin{frame}{Garder la main sur son outil}
-\SwissAstroMediaText[right]{figures/image9.png}{}{}{\small Un soir nuageux suffit pour essayer une petite idée.\par\medskip Choisissez une modification que vous pourrez vérifier vous-même.}
+\grandvisuel{image9.png}{Choisissez une modification que vous pouvez réaliser et vérifier pendant une soirée.}
 \end{frame}
 \begin{frame}{Essayer deux solutions au même besoin}
-\SwissAstroMediaText[left]{figures/image10.png}{}{}{\small Demandez un tableau, puis une carte du même ciel.\par\medskip Gardez la version qui vous aide à décider quoi observer.}
+\grandvisuel{image10.png}{Essayez un tableau et une carte du même ciel. Quelle vue aide à choisir une cible?}
 \end{frame}
 \ouverture{Les limites de l’IA pour coder}{Repérer les erreurs silencieuses, tester les corrections et protéger ses données.}
 \begin{frame}{Une réponse plausible peut être fausse}
-\SwissAstroDataColumns{\SwissAstroImageOnly[42mm]{figures/image11.png}\par{\scriptsize Erreurs relevées dans le projet Messier.}}{\small Une image bien présentée peut porter le mauvais identifiant.\par\medskip Comparez le nom et les coordonnées dans un catalogue indépendant.}
+\grandvisuel{image11.png}{Comparez le nom et les coordonnées de l’objet dans un catalogue indépendant.}
 \end{frame}
 \begin{frame}{Reconnaître une régression}
-\SwissAstroScientificFigure{figures/image12.png}{Évolution du code après une correction.}{Illustrations du plan de conférence.}{\small Après une correction, une fonction qui marchait peut cesser de fonctionner.\par\medskip Rejouez un ancien exemple. Comptez les objets avant et après.}
+\grandvisuel{image12.png}{Après une correction, rejouez un ancien exemple. Vérifiez les fonctions et les objets retrouvés.}
 \end{frame}
 \begin{frame}{Protéger ses fichiers et ses accès}
-\SwissAstroMediaText[left]{figures/image13.png}{}{}{\small Testez sur des copies. Gardez les originaux en lecture seule.\par\medskip Retirez les clés d'accès des exemples. Vérifiez les droits de réutilisation des images.}
+\grandvisuel{image13.png}{Travaillez sur des copies. Gardez les originaux en lecture seule et retirez les clés d’accès.}
 \end{frame}
 \begin{frame}{Savoir expliquer ce que fait le logiciel}
-\SwissAstroMediaText[right]{figures/image14.png}{}{}{\small Avant de lancer le programme, prédisez sa sortie.\par\medskip Une cible sous l'horizon apparaît-elle dans la liste? Cherchez quelle règle l'a laissée passer.}
+\grandvisuel{image14.png}{Prédisez la sortie avant l’essai. Si une cible est sous l’horizon, la liste doit-elle la retenir?}
 \end{frame}
 \ouverture{Le logiciel libre et l’open source}{Comprendre les quatre libertés, les licences et le rôle de la communauté.}
 \begin{frame}{Partager le code et les décisions}
-\SwissAstroMediaText[right]{figures/image15.png}{}{}{\small Le logiciel libre met l'accent sur les libertés accordées aux utilisateurs.\par\medskip L'open source précise des conditions de redistribution. Un projet peut relever des deux approches.}
+\grandvisuel{image15.png}{Le logiciel libre met l’accent sur les libertés des utilisateurs. L’open source précise les conditions de redistribution.}
 \end{frame}
 \begin{frame}{Les quatre libertés d'un club}
 \SwissAstroOpenFour{0 · Exécuter}{Utilisez le programme pour vos observations.}{1 · Étudier}{Lisez et adaptez son code source.}{2 · Copier}{Donnez une copie à un autre membre.}{3 · Partager}{Distribuez votre version améliorée.}
 \end{frame}
 \begin{frame}{Choisir les conditions de réutilisation}
-\SwissAstroDataColumns{\SwissAstroImageOnly[42mm]{figures/image16.png}\par{\scriptsize Deux familles de licences libres.}}{\small MIT et BSD permettent une réutilisation étendue avec conservation des mentions requises.\par\medskip La GPL demande de préserver des libertés lors de la redistribution d'une version couverte.}
+\grandvisuel{image16.png}{MIT et BSD imposent des mentions à conserver. La GPL protège les libertés lors de la redistribution.}
 \end{frame}
 \begin{frame}{Qui fait vivre un projet libre?}
-\SwissAstroScientificFigure{figures/image17.png}{Exemples de modes de participation.}{Illustrations du plan de conférence.}{\small Certains outils dépendent d'une seule personne. D'autres réunissent de nombreux contributeurs.\par\medskip Avant d'adopter un outil, repérez qui le maintient et comment demander de l'aide.}
+\grandvisuel{image17.png}{Avant d’adopter un outil, repérez qui le maintient et comment contribuer.}
 \end{frame}
 \ouverture{Le prompt}{Définir le prompt, c’est-à-dire la consigne donnée à l’IA. Améliorer sa formulation. Comparer Chat, Work et Codex, puis estimer la consommation de tokens et son coût.}
 \begin{frame}{Un prompt est une consigne}
-\SwissAstroMediaText[left]{figures/image18.png}{}{}{\small « Trie mes images » laisse plusieurs décisions ouvertes.\par\medskip Précisez le dossier, la règle de tri et la forme du résultat attendu.}
+\SwissAstroProcessThree{Demander}{« Trie mes images. »}{Préciser}{Indiquez le dossier, la règle de tri et le format de sortie.}{Vérifier}{Testez sur trois fichiers dont vous connaissez les objets.}
 \end{frame}
 \begin{frame}{Écrire une consigne que l'on peut tester}
-\SwissAstroMediaText[right]{figures/image19.png}{}{}{\small Donnez le rôle, le contexte, la tâche, les contraintes et le résultat attendu.\par\medskip « Lis ces copies FITS. Produis un tableau objet, date et durée. Signale les champs absents. »}
+\grandvisuel{image19.png}{Précisez le rôle, le contexte, la tâche, les contraintes et le résultat attendu.}
 \end{frame}
 \begin{frame}{Cinq façons de préciser une demande}
 \SwissAstroProcessFive{{Illustrer}{Donnez deux exemples.}}{{Planifier}{Demandez un plan court.}}{{Préciser}{Invitez les questions.}}{{Relire}{Faites vérifier la proposition.}}{{Reformuler}{Affinez la consigne.}}
@@ -93,10 +97,11 @@
 \SwissAstroCompare{Demande vague}{« Corrige ça. »\par\medskip « Rends-le plus beau. »}{Consigne vérifiable}{Nommez le fichier et le problème.\par\medskip Précisez un critère visible.}\SwissAstroTakeaway{Demandez un seul changement, puis vérifiez son effet.}
 \end{frame}
 \begin{frame}{Chat, Work et Codex en pratique}
-\SwissAstroThreeColumns{\SwissAstroCard{Chat}{Explorer une idée.}}{\SwissAstroCard{Work}{Produire un document.}}{\SwissAstroCard{Codex}{Modifier et tester le projet.}}\par\smallskip\centering \SwissAstroImageOnly[28mm]{figures/image20.png}
+\only<1>{\SwissAstroThreeColumns{\SwissAstroCard{Chat}{Explorer une idée.}}{\SwissAstroCard{Work}{Produire un document.}}{\SwissAstroCard{Codex}{Modifier et tester le projet.}}}
+\only<2>{\grandvisuel{image20.png}{Chat pour explorer une idée, Work pour produire un document, Codex pour modifier et tester le projet.}}
 \end{frame}
 \begin{frame}{Comprendre le coût d'une requête}
-\SwissAstroDataColumns{\SwissAstroImageOnly[42mm]{figures/image21.png}\par{\scriptsize Exemple tarifaire du document de référence.}}{\small Un token est un fragment de texte traité par le modèle.\par\medskip Distinguez entrée, entrée mise en cache et sortie. Multipliez chaque volume par son tarif.\par\medskip Les chiffres de la figure illustrent le document source. Vérifiez le forfait avant de chiffrer un projet.}
+\grandvisuel{image21.png}{Multipliez chaque volume par son tarif. Vérifiez les prix en vigueur pour votre forfait.}
 \end{frame}
 \ouverture{Les composantes d’un projet libre}{Organiser les dossiers du projet. Reconnaître les fichiers Markdown (.md) et le rôle de chacun.}
 \begin{frame}{Se repérer dans un dépôt}
@@ -110,36 +115,64 @@
 \SwissAstroCompare{Git}{Enregistre des versions du projet sur votre ordinateur.}{GitHub}{Héberge une copie du dépôt et accueille les contributions du club.}
 \end{frame}
 \begin{frame}{Enregistrer un changement avec Git}
-\SwissAstroProcessThree{Inspecter}{\texttt{git status}}{Choisir}{\texttt{git add README.md}}{Enregistrer}{\texttt{git commit -m "Documenter le premier essai"}}\par\smallskip\centering \SwissAstroImageOnly[24mm]{figures/image22.png}
+\only<1>{\SwissAstroProcessThree{Inspecter}{\texttt{git status}}{Choisir}{\texttt{git add README.md}}{Enregistrer}{\texttt{git commit -m "Documenter le premier essai"}}}
+\only<2>{\grandvisuel{image22.png}{Repérez l’étape qui précède la correction. Le commit permet de retrouver cet état du projet.}}
 \end{frame}
 \begin{frame}{Essayer une idée sur une branche}
-\SwissAstroDataColumns{\SwissAstroImageOnly[42mm]{figures/image23.png}\par{\scriptsize Deux branches dans un même historique.}}{\small Une branche garde une modification à part pendant son essai.\par\medskip Faites un commit après chaque étape vérifiée. Intégrez la branche quand le résultat convient.}
+\grandvisuel{image23.png}{Une branche isole l’essai. Intégrez la modification après vérification.}
 \end{frame}
 \begin{frame}{Lire un numéro de version}
-\SwissAstroThreeColumns{\SwissAstroTimelineItem{1.2.0}{Point de départ}{Version de référence.}}{\SwissAstroTimelineItem{1.2.1}{Correctif}{Réparation compatible.}}{\SwissAstroTimelineItem{1.3.0}{Version mineure}{Fonction compatible.}}\par\smallskip\centering \SwissAstroImageOnly[25mm]{figures/image24.png}
+\only<1>{\SwissAstroThreeColumns{\SwissAstroTimelineItem{1.2.0}{Point de départ}{Version de référence.}}{\SwissAstroTimelineItem{1.2.1}{Correctif}{Réparation compatible.}}{\SwissAstroTimelineItem{1.3.0}{Version mineure}{Fonction compatible.}}}
+\only<2>{\grandvisuel{image24.png}{Une correction compatible incrémente le dernier nombre : 1.2.0 devient 1.2.1.}}
 \end{frame}
 \ouverture{Quatre projets astronomiques}{\href{https://github.com/steveprudhomme/GNUAfficheMessier}{GNU Affiche Messier} — Composer une affiche\newline \href{https://github.com/steveprudhomme/astrogalery}{GNU Astro Galery} — Documenter ses images\newline \href{https://github.com/steveprudhomme/gnuastrolist}{GNU Astrolist} — Planifier une soirée\newline \href{https://github.com/steveprudhomme/gnu-astrophotography-recycle}{GNU Astrophotography Recycle} — Réutiliser ses poses FITS}
 \begin{frame}{Une affiche pour suivre ses objets Messier}
-\SwissAstroThreeColumns{\SwissAstroImageBlock[29mm]{figures/image25.png}{Maquette de l’affiche}{}}{\SwissAstroImageBlock[29mm]{figures/image26.png}{Dossiers du Seestar}{}}{\SwissAstroImageBlock[29mm]{figures/image27.png}{Deux noms pour M31}{}}\SwissAstroTakeaway{110 emplacements sur une affiche de 24 \(\times\) 36 po. M31 et NGC 224 désignent la même galaxie. Comptez-la une seule fois.}
+\only<1>{\grandvisuel{image25.png}{Maquette du projet : 110 emplacements sur une affiche de 24 × 36 pouces.}}
+\only<2>{\grandvisuel{image26.png}{Dans MyWorks, repérez les images retenues et les dossiers de poses individuelles.}}
+\only<3>{\grandvisuel{image27.png}{M31 et NGC 224 désignent la même galaxie. Une seule case doit être remplie.}}
 \end{frame}
 \begin{frame}{04 — La première conversation avec ChatGPT}
-\SwissAstroTwoColumns{\SwissAstroImageBlock[31mm]{figures/image28.png}{Du dossier MyWorks à l’affiche}{}}{\SwissAstroImageBlock[31mm]{figures/image29.png}{Première détection}{}}\SwissAstroTakeaway{Le programme parcourt le dossier MyWorks du Seestar. Premier essai documenté : 35 objets Messier sur 110. Comparez la liste aux dossiers sources.}
+\only<1>{\grandvisuel{image28.png}{La demande initiale : parcourir MyWorks et composer une affiche PDF à partir des observations.}}
+\only<2>{\grandvisuel{image29.png}{Premier essai documenté : 35 objets repérés sur 110. Comparez ce bilan à la liste des dossiers.}}
+\only<3>{\grandvisuel{affiche-messier-realisee.jpg}{Affiche réellement produite par Steve Prud’Homme, reproduite depuis le PDF de 24 × 36 pouces.}}
+\only<4>{\grandvisuel{affiche-messier-detail.jpg}{Détail de la même affiche : une photo occupe la case de l’objet observé. Les cases vides gardent leur légende.}}
 \end{frame}
 \begin{frame}{Du fichier FITS à la galerie Web}
-\SwissAstroTwoColumns{\SwissAstroImageBlock[19mm]{figures/image30.png}{La galerie Web}{}\par \SwissAstroImageBlock[19mm]{figures/image32.png}{L’en-tête FITS}{}}{\SwissAstroImageBlock[19mm]{figures/image31.png}{Le dossier de M44}{}\par \SwissAstroImageBlock[19mm]{figures/image18.png}{La carte de champ}{}}
+\only<1>{\grandvisuel{image31.png}{M44 : partez du répertoire créé par le Seestar. Repérez le fichier FITS et l’aperçu JPEG.}}
+\only<2>{\grandvisuel{image32.png}{Dans l’en-tête FITS, retrouvez la durée de pose (EXPTIME) et la date (DATE-OBS).}}
+\only<3>{\grandvisuel{image18.png}{Carte de champ de M102 : elle situe l’objet parmi les étoiles voisines.}}
+\only<4>{\grandvisuel{image30.png}{Résultat réel : la galerie rassemble les fiches et les photographies de plusieurs objets.}}
 \end{frame}
 \begin{frame}{Préparer une soirée avec GNU Astrolist}
-\SwissAstroThreeColumns{\SwissAstroImageBlock[29mm]{figures/image33.png}{La hauteur des cibles}{}}{\SwissAstroImageBlock[29mm]{figures/image34.png}{Les archives consultées}{}}{\SwissAstroImageBlock[29mm]{figures/image35.png}{Le rapport de soirée}{}}\SwissAstroTakeaway{Choisissez une plage de hauteurs visible depuis votre site. Comparez la sélection au rapport PDF. Consultez les acquisitions passées en lecture seule.}
+\only<1>{\grandvisuel{image33.png}{Définissez la portion de ciel accessible sur le terrain. La hauteur se mesure depuis l’horizon.}}
+\only<2>{\grandvisuel{image34.png}{Consultez les archives Seestar en lecture seule pour retrouver les acquisitions précédentes.}}
+\only<3>{\grandvisuel{image35.png}{Exemple de rapport antérieur. Les deux vues suivantes utilisent la soirée du 24 novembre 2026.}}
+\only<4>{\SwissAstroLead{Laval · 24 novembre 2026 · 20 h à 22 h}
+{\ttfamily\fontsize{10.7}{14}\selectfont
+gnu-astrolist -{}-date 2026-11-24 -{}-time-range 20:00-22:00\\
+-{}-timezone America/Toronto -{}-lat 45.57 -{}-lon -73.68\\
+-{}-az-min 15 -{}-az-max 180 -{}-min-altitude 20\\
+-{}-objects messier -{}-limit 5 -{}-offline\par}
+\SwissAstroTakeaway{Saisissez la commande sur une seule ligne. Elle sélectionne jusqu’à cinq objets Messier dans la portion de ciel choisie.}}
+\only<5>{\SwissAstroLead{Le rapport trouve 20 objets et en affiche cinq}
+\begin{tabular}{lrr}Objet & Hauteur à 20 h & Hauteur à 22 h\\\hline
+M45 & 43,3° & 62,3°\\ M31 & 84,1° & 71,9°\\ M42 & 3,9° & 23,1°\\ M35 & 18,9° & 39,7°\\ M34 & 64,5° & 85,2°\end{tabular}
+\SwissAstroTakeaway{M42 figure dans la liste parce qu’elle franchit 20° vers 21 h 38. Les hauteurs sont calculées pour Laval.}}
 \end{frame}
-\begin{frame}{Réutiliser ses poses brutes}
-\SwissAstroDataColumns{\SwissAstroImageOnly[42mm]{figures/image36.png}\par{\scriptsize Traitement des archives Seestar S50.}}{\small Retrouvez les prises du même champ sur plusieurs nuits.\par\medskip Vérifiez date, filtre et durée avant de regrouper les images. Conservez les originaux.}
+\begin{frame}{Des poses archivées aux passages de satellites}
+\only<1>{\grandvisuel{image36.png}{Le point de départ : inventorier les archives en lecture seule et conserver les renseignements de chaque pose.}}
+\only<2>{\grandvisuel{recycle-demarche.png}{ChatGPT aide à préciser le besoin. Codex aide à préparer et tester le code. L’astronome examine les traces.}}
+\only<3>{\grandvisuel{recycle-serie.png}{Huit poses réelles de 10 secondes, espacées d’environ cinq minutes. Repérez la huitième vue.}}
+\only<4>{\grandvisuel{recycle-s03-08.png}{S03-08 : en haut, les pixels observés. En bas, la trace mesurée et la prévision pour STARLINK-1301.}}
+\only<5>{\grandvisuel{recycle-s04-01.png}{S04-01 : la trace faible reste douteuse. Aucune association n’a été retenue.}}
+\only<6>{\grandvisuel{recycle-ecarts.png}{16 poses étudiées, trois associations plausibles, aucune identité confirmée. Les écarts comparent mesure et prévision.}}
 \end{frame}
 \SwissAstroStatementFrame{À vous de jouer}{Quelle tâche revient à chaque séance?}{Décrivez le résultat attendu. Quelle observation permettra de le vérifier?}
 \begin{frame}{Retrouver les projets et les références}
 \SwissAstroDataColumns{\SwissAstroImageBlock[39mm]{figures/image37.png}{Dépôts des projets et galerie en ligne.}{Steve Prud’Homme}}{%
   \SwissAstroLead{Pour aller plus loin}
   \href{https://github.com/steveprudhomme}{Projets de Steve Prud’Homme sur GitHub}\par\medskip
-  \hyperlink{bibliographie}{\beamergotobutton{Lire les 22 références}}}
+  \hyperlink{bibliographie}{\beamergotobutton{Lire les 23 références}}}
 \end{frame}
 \appendix
 \setbeamertemplate{footline}{}

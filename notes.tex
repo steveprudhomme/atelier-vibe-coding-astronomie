@@ -10,7 +10,7 @@
 {\Large Texte du présentateur}\par Steve Prud'Homme \hfill Conférence-atelier de 120 minutes
 \medskip\hrule\medskip
 \textbf{Conduite de l'atelier.} Les heures indiquent le temps écoulé depuis le début. Chaque plage comprend le texte oral, la lecture des figures, les essais et les échanges avec la salle.
-À chaque changement de section, projetez la page de titre pour annoncer le sujet. Cette transition est comprise dans le temps du bloc.
+Les pages successives d’une même diapositive gardent son numéro. Avancez pour agrandir chaque figure. À chaque changement de section, projetez la page de titre pour annoncer le sujet. Cette transition est comprise dans le temps du bloc.
 \begin{description}
 \item[0:00] Accueil et présentation du parcours
 \item[0:05] 01 — Les problèmes que l’IA peut aider à résoudre (diapo 03)
@@ -290,7 +290,7 @@ Dans son livre Working in Public, la chercheuse Nadia Eghbal (2020) propose une 
 
 {\small\textbf{Repère visuel.} Schéma du cycle itératif d'affinement des prompts : Exprimer le besoin \(\rightarrow\) Générer \(\rightarrow\) Tester \(\rightarrow\) Analyser \(\rightarrow\) Corriger (Prud'Homme, 2026a).\par}
 
-\begin{minipage}[t]{.86\linewidth}\centering\includegraphics[width=\linewidth,height=40mm,keepaspectratio]{figures/image18.png}\par{\scriptsize Figure 19.1 — Cycle itératif de conversation et d'affinement des prompts (Prud'Homme, 2026a).\par}\end{minipage}\par
+\textbf{Schéma projeté.} Formulez la demande. Précisez un critère observable. Vérifiez le résultat obtenu avant de poursuivre.\par
 
 \par\medskip\repere{Texte oral}
 
@@ -440,7 +440,7 @@ Le concept central de Git, c'est le commit (que l'on traduit parfois par « vali
 
 \par\medskip\repere{Texte oral}
 
-Pourquoi insistons-nous autant sur le fait de commiter très fréquemment lorsqu'on développe avec une intelligence artificielle ? Martin et Newkirk (2025) rappellent qu'avec Git, faire un commit local est instantané et gratuit : vous pouvez en faire un toutes les dix minutes, dès qu'un petit test réussit. En Vibe Coding, c'est votre bouée de sauvetage. Avant de demander à ChatGPT ou à Codex de réorganiser votre programme ou d'ajouter un nouveau catalogue astronomique, faites toujours un commit de votre version qui fonctionne (Liew, 2026). Si l'IA casse tout, vous tapez git checkout . ou git reset --hard et l'incident est effacé. De plus, lorsque vous voulez expérimenter une fonctionnalité complexe sans risquer de déstabiliser votre logiciel principal, Git offre un outil merveilleux appelé la branche (branch). Karl Fogel (2022) compare la branche principale (main) au château central que tout le monde utilise, et une branche secondaire (git checkout -b ajout-cometes) à un terrain d'essai isolé où vous pouvez construire un nouveau pont-levis. Si le pont-levis tient debout après vos tests, vous le fusionnez (merge) dans le château principal ; s'il s'effondre, vous supprimez simplement la branche d'essai sans aucun dégât !\par
+Pourquoi insistons-nous autant sur le fait de commiter très fréquemment lorsqu'on développe avec une intelligence artificielle ? Martin et Newkirk (2025) rappellent qu'avec Git, faire un commit local est instantané et gratuit : vous pouvez en faire un toutes les dix minutes, dès qu'un petit test réussit. En Vibe Coding, c'est votre bouée de sauvetage. Avant de demander à ChatGPT ou à Codex de réorganiser votre programme ou d'ajouter un nouveau catalogue astronomique, faites toujours un commit de votre version qui fonctionne (Liew, 2026). Si l'IA casse tout, vous tapez git checkout . ou git reset -{}-hard et l'incident est effacé. De plus, lorsque vous voulez expérimenter une fonctionnalité complexe sans risquer de déstabiliser votre logiciel principal, Git offre un outil merveilleux appelé la branche (branch). Karl Fogel (2022) compare la branche principale (main) au château central que tout le monde utilise, et une branche secondaire (git checkout -b ajout-cometes) à un terrain d'essai isolé où vous pouvez construire un nouveau pont-levis. Si le pont-levis tient debout après vos tests, vous le fusionnez (merge) dans le château principal ; s'il s'effondre, vous supprimez simplement la branche d'essai sans aucun dégât !\par
 
 \clearpage\repere{DIAPOSITIVE 37 / 45 · 1:33:30 – 1:37 · 3,5 min}
 
@@ -502,7 +502,8 @@ Le premier projet est GNUAfficheMessier. Comme beaucoup d'entre vous qui posséd
 
 \begin{minipage}[t]{.48\linewidth}\centering\includegraphics[width=\linewidth,height=28mm,keepaspectratio]{figures/image29.png}\par{\scriptsize Figure 33.2 — Statistiques intermédiaires du premier essai : 35 objets Messier détectés sur 110 (Prud'Homme, 2025).\par}\end{minipage}\par
 
-\par\medskip\repere{Texte oral}
+\par\medskip\textbf{À projeter.} Après le bilan du premier essai, montrez le PDF réalisé. Avancez encore pour agrandir une rangée. Faites distinguer une case photographiée et une case en attente.\par\medskip
+\repere{Texte oral}
 
 Regardez cette diapositive : je tiens à vous montrer le véritable message initial que j'ai envoyé à ChatGPT le 29 décembre 2025 pour lancer ce projet. Vous voyez qu'il n'y a aucune formule magique, pas de jargon technique, et même quelques fautes de frappe (« sript », « parmis ») ! Comme le confirment Kim et Yegge (2025), les modèles modernes tolèrent parfaitement les fautes d'orthographe et extraient votre intention. À partir de ces quatre phrases, ChatGPT a immédiatement compris qu'il fallait utiliser Python avec les bibliothèques gratuites Pillow et ReportLab, et il a calculé qu'une grille de 11 colonnes par 10 rangées permettait d'afficher les 110 objets sur un poster 24 par 36 pouces (Prud'Homme, 2025). Bien sûr, tout n'a pas fonctionné du premier coup : il a fallu plusieurs allers-retours pour passer les noms des objets en français, corriger le filtrage des dossiers -sub et réparer les trois erreurs scientifiques de la table NGC que nous avons vues plus tôt. Mais en une journée, l'outil fonctionnait !\par
 
@@ -524,7 +525,8 @@ Regardez cette diapositive : je tiens à vous montrer le véritable message init
 
 \begin{minipage}[t]{.48\linewidth}\centering\includegraphics[width=\linewidth,height=28mm,keepaspectratio]{figures/image18.png}\par{\scriptsize Figure 34.4 — Carte stellaire centrée sur M 102 générée automatiquement par Matplotlib (Prud'Homme, 2026a).\par}\end{minipage}\par
 
-\par\medskip\repere{Texte oral}
+\par\medskip\textbf{À projeter.} Affichez les quatre vues successives : répertoire de M44, en-tête FITS, carte de M102 et galerie finale. Ces objets illustrent des étapes différentes.\par\medskip
+\repere{Texte oral}
 
 Le deuxième projet est GNU Astro Galery. Lorsque l'on partage une astrophotographie sur Facebook ou Instagram, on perd toute sa richesse scientifique : le temps de pose total, le filtre utilisé, la température du capteur, les coordonnées célestes exactes et la météo qu'il faisait cette nuit-là. Pourtant, toutes ces informations sont précieusement enregistrées à l'intérieur du fichier FITS produit par le télescope ! J'ai donc demandé à ChatGPT de m'aider à créer un programme Python qui scanne mes dossiers d'observation — comme celui de l'amas de la Crèche M 44 que vous voyez à l'écran —, lit les en-têtes FITS grâce à Astropy, interroge les catalogues SIMBAD et Open-Meteo pour retrouver la météo historique de la soirée, trace une carte du ciel autour de l'objet avec Matplotlib et génère un site Web statique complet prêt à être mis en ligne (Prud'Homme, 2026a). Ce projet m'a appris deux leçons fondamentales du Vibe Coding. D'abord, la valeur de la mise en cache : au début, le programme retéléchargeait toutes les données sur Internet à chaque exécution ; en expliquant simplement le problème à ChatGPT, il a créé une mémoire locale qui accélère tout. Ensuite, l'importance de la modularité et de Git : c'est sur ce projet, en version 0.8.0, que ChatGPT a effacé 30 \% de mon fichier de 86 Ko lors d'une refonte, me prouvant qu'il faut découper le code en petits modules et sauvegarder chaque étape sur GitHub (Prud'Homme, 2026a).\par
 
@@ -544,7 +546,8 @@ Le deuxième projet est GNU Astro Galery. Lorsque l'on partage une astrophotogra
 
 \begin{minipage}[t]{.48\linewidth}\centering\includegraphics[width=\linewidth,height=28mm,keepaspectratio]{figures/image35.png}\par{\scriptsize Figure 35.3 — Rapport PDF « Soirée d'observation » généré par GNU Astrolist (M45, NGC1990, M31) (Prud'Homme, 2026b).\par}\end{minipage}\hfill
 
-\par\medskip\repere{Texte oral}
+\par\medskip\textbf{À projeter.} Après le rapport antérieur, projetez la commande puis la sortie du calcul du 24 novembre. Commande à saisir sur une seule ligne : \par{\raggedright\ttfamily\small gnu-astrolist -{}-date 2026-11-24 -{}-time-range 20:00-22:00 -{}-timezone America/Toronto -{}-lat 45.57 -{}-lon -73.68 -{}-az-min 15 -{}-az-max 180 -{}-min-altitude 20 -{}-objects messier -{}-limit 5 -{}-offline\par} GNU Astrolist 0.11.0 a trouvé 20 objets et en a affiché cinq. À 20 h, M42 est à 3,9°. Elle atteint 20° vers 21 h 38. Le programme inclut un objet s’il entre dans le champ à au moins un échantillon. Le mode hors ligne utilise des données locales, sans météo. La table de rotation terrestre disponible dépasse sa plage de validité : ces hauteurs arrondies servent à planifier la soirée.\par\medskip
+\repere{Texte oral}
 
 Le troisième projet, GNU Astrolist, illustre un autre scénario très fréquent : reprendre un vieux logiciel existant et le faire évoluer avec rigueur grâce à l'alliance entre ChatGPT et Codex (Prud'Homme, 2026b). Avant chaque belle nuit dégagée, nous nous posons tous la même question : « Qu'est-ce que je peux photographier ce soir depuis mon terrain ? » Depuis mon jardin, certains arbres bloquent l'horizon bas sous 20 degrés, et mon télescope alt-azimutal peine au-dessus de 80 degrés près du zénith. De plus, je voulais fusionner les catalogues Messier, Caldwell et NGC sans doublons (M31 et NGC 224 regroupés sur une seule ligne) et vérifier automatiquement si j'avais déjà photographié l'objet sur mon Seestar — tout en imposant une règle de sécurité absolue : toucher au disque du Seestar uniquement en lecture seule (Prud'Homme, 2026b). En travaillant par étapes avec Codex directement sur le dépôt GitHub, nous avons ajouté le calcul des passages de satellites (avec heure locale, azimut et hauteur pour le cadrage), les comètes, les astéroïdes et un mode hors connexion qui fonctionne sous la tente sans Wi-Fi. Surtout, j'ai exigé des preuves de qualité : le projet dispose désormais de 800 tests automatisés qui vérifient à chaque modification que rien n'a été cassé !\par
 
@@ -552,19 +555,21 @@ Le troisième projet, GNU Astrolist, illustre un autre scénario très fréquent
 
 \clearpage\repere{DIAPOSITIVE 43 / 45 · 1:53:30 – 1:57 · 3,5 min}
 
-{\Large\bfseries Réutiliser ses poses brutes\par}
+{\Large\bfseries Des poses archivées aux passages de satellites\par}
+\repere{Texte oral et conduite des six vues}
+\textbf{0:00–0:30 · L’archive.} Une traînée dans une pose du Seestar attire mon attention. Comment vérifier si elle correspond au passage d’un satellite connu? Je conserve l’image et ses métadonnées. Je mène l’analyse sur une copie.
 
-\smallskip\hrule\smallskip
+\textbf{0:30–1:00 · La démarche.} ChatGPT m’aide à préciser le besoin. Avec Codex, je peux écrire et vérifier les étapes du programme. Sur les seize poses, le détecteur a conservé 935 propositions de lignes. Beaucoup sont des résidus. Une proposition appelle un examen des pixels.
 
-{\small\textbf{Repère visuel.} Schéma du flux de recyclage local des poses unitaires FITS multi-nuits vers un retraitement structuré.\par}
+\textbf{1:00–1:30 · Les observations.} Regardez la série de huit poses. Chacune dure dix secondes. Environ cinq minutes séparent deux prises. Pointez la huitième image de la série 3.
 
-\begin{minipage}[t]{.86\linewidth}\centering\includegraphics[width=\linewidth,height=40mm,keepaspectratio]{figures/image36.png}\par{\scriptsize Figure 36.1 — Flux de travail local de gnu-astrophotography-recycle (Prud'Homme, 2026c).\par}\end{minipage}\par
+\textbf{1:30–2:15 · S03-08.} Montrez d’abord la photo du haut. Où voyez-vous la traînée? Passez à la vue annotée. Une ligne vient de la mesure de l’image. L’autre vient d’une prévision orbitale. Leur proximité rend plausible une association avec STARLINK-1301.
 
-\par\medskip\repere{Texte oral}
+\textbf{2:15–2:45 · S04-01.} La quatrième trace est faible. Le dossier conserve cette incertitude : aucune association n’est retenue pour cette pose.
 
-Enfin, le quatrième projet, tout récent, s'intitule gnu-astrophotography-recycle, accessible lui aussi sur mon GitHub sous licence GNU GPL v3 (Prud'Homme, 2026c). Même si sa fiche de conférence détaillée est encore en cours de rédaction, l'idée répond à un besoin que tous les astrophotographes connaissent bien : que faire des milliers de fichiers FITS bruts accumulés mois après mois sur nos disques externes ? Souvent, on observe un objet pendant trente minutes en automne, puis on y revient deux heures en hiver, et nos fichiers sont éparpillés dans des dizaines de sous-dossiers datés. L'objectif de GNU Astrophotography Recycle est d'automatiser localement l'inventaire, le tri et le « recyclage scientifique » de ces archives Seestar S50 afin de regrouper les acquisitions exploitables et de préparer proprement leur retraitement, toujours sans jamais altérer les originaux. Là encore, la démarche reste identique : partir d'un irritant concret de notre pratique d'astronome, dialoguer avec l'IA pour automatiser la mécanique informatique, et partager l'outil librement avec la communauté !\par
+\textbf{2:45–3:30 · Résultats et limites.} Trois poses donnent trois associations plausibles avec des objets distincts : KUIPER-00116 pour S03-03, STARLINK-1301 pour S03-08 et CENTISPACE-1 S13 pour S04-04. L’écart transversal est la distance angulaire entre la ligne mesurée et la ligne prévue. Les trois médianes sont d’environ 60, 34 et 30 secondes d’arc. Ces valeurs décrivent l’accord géométrique et laissent ouvertes les incertitudes. Aucune identité n’est confirmée. Le journal et le tutoriel permettent de rejouer l’étude, actuellement en pause.
 
-\smallskip\textbf{Animation proposée.} Demandez quels renseignements conserver pour comparer deux nuits d'observation.
+\textit{Document illustré de Steve Prud’Homme, 24 novembre 2026, figures 3, 4, 9, 10 et 11.}
 
 \clearpage\repere{DIAPOSITIVE 44 / 45 · 1:57 – 1:58:30 · 1,5 min}
 

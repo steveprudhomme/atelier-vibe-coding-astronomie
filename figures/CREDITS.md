@@ -41,3 +41,8 @@ Les deux documents illustrés de Steve Prud’Homme (version v2) fournissent les
 - image36.png — Figure 36.1 — Flux de travail local de gnu-astrophotography-recycle (Prud’Homme, 2026c).
 - image1.png — Figure 37.1 — L'astronome définit le cap et valide la science ; l'IA accélère la réalisation (Prud’Homme, 2025).
 - image37.png — Figure 38.1 — Codes QR d'accès direct aux dépôts GitHub et à la galerie en ligne (Prud’Homme, 2026a).
+
+## Affiche produite et étude des traces
+
+- affiche-messier-realisee.jpg et affiche-messier-detail.jpg — Affiche et agrandissement d’une rangée du PDF « Affiche_Objets_Messier_24x36.pdf » de Steve Prud’Homme, rendu à partir de l’original de 24 × 36 pouces, sans modification des observations.
+- recycle-serie.png, recycle-demarche.png, recycle-s03-08.png, recycle-s04-01.png et recycle-ecarts.png — Steve Prud’Homme (24 novembre 2026), *GNU Astrophotography Recycle. Donner une deuxième vie à ses poses avec l’aide de l’intelligence artificielle*, figures 3, 4, 9, 10 et 11 respectivement. Les pixels proviennent de poses réelles. Les lignes de comparaison et le graphique sont calculés.
