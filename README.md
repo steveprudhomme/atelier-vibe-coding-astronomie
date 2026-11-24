@@ -1,5 +1,17 @@
 # Le vibe coding pour l’astronomie amateur
 
+## Ressources de la conférence
+
+- [Diapositives de la conférence (PDF)](presentation.pdf)
+- [Notes du présentateur et bibliographie mise en page (PDF)](notes.pdf)
+- [Bibliographie de la conférence (BibTeX)](references.bib)
+- [Article de la conférence de deux heures en club d’astronomie, avec diapositives et notes intégrales (PDF)](article.pdf) · [Source LaTeX](article.tex)
+- Articles scientifiques en accès libre : [le projet Astropy et son logiciel communautaire](https://doi.org/10.3847/1538-4357/ac7c74) et [la définition du format FITS 3.0](https://ntrs.nasa.gov/citations/20100031222).
+
+Pour produire le PDF de l’article, exécuter `latexmk -pdf article.tex` depuis la racine du dépôt.
+
+## Conférence-atelier
+
 Conférence-atelier de Steve Prud’Homme pour les astronomes amateurs qui découvrent la création de logiciels. Les 45 diapositives numérotées, dont huit pages de titre de section, couvrent deux heures, de la première consigne à la vérification d’un résultat sur ses propres observations.
 
 - [Ouvrir la présentation](presentation.pdf)
