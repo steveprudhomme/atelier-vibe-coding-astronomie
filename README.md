@@ -1,10 +1,12 @@
 # Le vibe coding pour l’astronomie amateur
 
-Conférence-atelier de Steve Prud’Homme pour les astronomes amateurs qui découvrent la création de logiciels. Les 38 diapositives couvrent deux heures, de la première consigne à la vérification d’un résultat sur ses propres observations.
+Conférence-atelier de Steve Prud’Homme pour les astronomes amateurs qui découvrent la création de logiciels. Les 45 diapositives, dont huit pages de titre de section, couvrent deux heures, de la première consigne à la vérification d’un résultat sur ses propres observations.
 
 - [Ouvrir la présentation](presentation.pdf)
 - [Lire le texte du présentateur, le minutage et les références](notes.pdf)
 - [Consulter les crédits des illustrations](figures/CREDITS.md)
+
+Les 22 références sont projetables en annexe, après les 45 diapositives minutées. La présentation et les notes utilisent la même base BibTeX.
 
 Les quatre études de cas portent sur GNU Affiche Messier, GNU Astro Galery, GNU Astrolist et GNU Astrophotography Recycle.
 
