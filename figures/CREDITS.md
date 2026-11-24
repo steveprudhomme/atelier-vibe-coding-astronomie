@@ -1,0 +1,43 @@
+# Figures de la conférence
+
+Les deux documents illustrés de Steve Prud’Homme (version v2) fournissent les images et leurs légendes. Les descriptions ci-dessous suivent le plan. Les marques, interfaces et éléments tiers conservent leurs droits respectifs.
+
+- image1.png — Figure 1.1 — Complémentarité entre l'astronome et l'intelligence artificielle (Prud’Homme, 2025).
+- image2.png — Figure 2.1 — Feuille de route chronologique de la conférence-atelier (120 minutes).
+- image3.png — Figure 3.1 — Comparaison entre programmation traditionnelle et Vibe Coding.
+- image4.png — Figure 4.1 — Architecture modulaire reliant paramètres, modules métier et sorties multiples (Prud’Homme, 2026b).
+- image5.png — Figure 5.1 — Erreurs réelles rencontrées et résolues par dialogue avec ChatGPT (Prud’Homme, 2025).
+- image6.png — Figure 6.1 — Gain de temps estimé sur la documentation de 147 astrophotographies (Prud’Homme, 2026a).
+- image7.png — Figure 7.1 — Les cinq dimensions de valeur FAAFO du Vibe Coding (Kim et Yegge, 2025).
+- image8.png — Figure 8.1 — Regroupement multi-catalogues Messier, Caldwell et NGC dans GNU Astrolist (Prud’Homme, 2026b).
+- image9.png — Figure 9.1 — Réduction des coûts de coordination grâce à l'autonomie assistée par IA.
+- image10.png — Figure 10.1 — Chaîne de traitement automatisée vers le partage Web (Prud’Homme, 2026a).
+- image11.png — Figure 11.1 — Exemples réels d'erreurs scientifiques générées par l'IA (Prud’Homme, 2025).
+- image12.png — Figure 12.1 — Diminution involontaire de 30 % de la taille du code lors d'une correction IA (Prud’Homme, 2026a).
+- image13.png — Figure 13.1 — Chaîne de prévention des risques de sécurité et de perte de données.
+- image14.png — Figure 14.1 — Boucle de contrôle humain dans le processus de Vibe Coding (Prud’Homme, 2025).
+- image15.png — Figure 15.1 — Deux philosophies de développement : La Cathédrale vs Le Bazar.
+- image16.png — Figure 17.1 — Licences permissives vs licences Copyleft (Meeker, 2020 ; Fogel, 2022).
+- image17.png — Figure 18.1 — Typologie des projets Open Source et positionnement d'Astropy (Eghbal, 2020).
+- image18.png — Figure 19.1 — Cycle itératif de conversation et d'affinement des prompts (Prud’Homme, 2026a).
+- image19.png — Figure 20.1 — Les cinq composantes d'un prompt structuré et efficace.
+- image20.png — Figure 23.1 — Comparatif des modes Chat, Work et Codex dans ChatGPT (OpenAI, 2026b).
+- image21.png — Figure 24.1 — Tarification par type de tokens et gestion des quotas ChatGPT Plus (OpenAI, 2026a ; VDF.AI, 2026).
+- image22.png — Figure 28.1 — Historique des commits et restauration rapide en cas d'erreur de l'IA.
+- image23.png — Figure 29.1 — Isolation des expérimentations IA grâce aux branches Git (Fogel, 2022).
+- image24.png — Figure 30.1 — Règles de numérotation sémantique SemVer appliquées à GNU Astrolist (Prud’Homme, 2026b).
+- image25.png — Figure 32.1 — Maquette illustrative de l'affiche murale 24 × 36 pouces « Les objets Messier » (Prud’Homme, 2025).
+- image26.png — Figure 32.2 — Schéma du Seestar S50 et organisation des répertoires MyWorks et -sub (Prud’Homme, 2025).
+- image27.png — Figure 32.3 — Double désignation astronomique : M31 (Messier) = NGC 224 (New General Catalogue) (Prud’Homme, 2025).
+- image28.png — Figure 33.1 — Chaîne de traitement automatisée : MyWorks → GNUAfficheMessier → Affiche PDF (Prud’Homme, 2025).
+- image29.png — Figure 33.2 — Statistiques intermédiaires du premier essai : 35 objets Messier détectés sur 110 (Prud’Homme, 2025).
+- image30.png — Figure 34.1 — Interface Web réelle de GNU Astro Galery (M 77, M 27, IC 342, NGC 1501, IC 5070) (Prud’Homme, 2026a).
+- image31.png — Figure 34.2 — Contenu d'un répertoire d'observation Seestar S50 (M 44 : fichiers .fit, .jpg et miniature) (Prud’Homme, 2026a).
+- image32.png — Figure 34.3 — Métadonnées astronomiques extraites de l'en-tête FITS (RA, DEC, EXPTIME, DATE-OBS, IRCUT) (Prud’Homme, 2026a).
+- image18.png — Figure 34.4 — Carte stellaire centrée sur M 102 générée automatiquement par Matplotlib (Prud’Homme, 2026a).
+- image33.png — Figure 35.1 — Délimitation de la zone d'observation entre 20° et 80° d'altitude (Prud’Homme, 2026b).
+- image34.png — Figure 35.2 — Consultation des archives Seestar S50 en mode lecture seule strict (Prud’Homme, 2026b).
+- image35.png — Figure 35.3 — Rapport PDF « Soirée d'observation » généré par GNU Astrolist (M45, NGC1990, M31) (Prud’Homme, 2026b).
+- image36.png — Figure 36.1 — Flux de travail local de gnu-astrophotography-recycle (Prud’Homme, 2026c).
+- image1.png — Figure 37.1 — L'astronome définit le cap et valide la science ; l'IA accélère la réalisation (Prud’Homme, 2025).
+- image37.png — Figure 38.1 — Codes QR d'accès direct aux dépôts GitHub et à la galerie en ligne (Prud’Homme, 2026a).
